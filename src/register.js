@@ -13,7 +13,7 @@ export function wrapDidDocument (did, address) {
   }
 }
 
-function register () {
+function registerResolver () {
   function resolve (did, parsed) {
     return new Promise((resolve, reject) => {
       if (!parsed.id.match(/^0x[0-9a-fA-F]{40}$/)) reject(new Error(`Not a valid eth DID: ${did}`))
