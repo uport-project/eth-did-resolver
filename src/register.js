@@ -9,10 +9,6 @@ export function wrapDidDocument (did, address) {
       type: 'Secp256k1VerificationKey2018',
       owner: did,
       ethereumAddress: address
-    }],
-    authentication: [{
-      type: 'Secp256k1SignatureAuthentication2018',
-      publicKey: `${did}#keys-1`
     }]
   }
 }
