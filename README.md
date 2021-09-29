@@ -22,17 +22,17 @@ The did resolver takes the ethereum address and wraps it into a simple DID docum
 ```js
 {
   '@context': 'https://w3id.org/did/v1',
-  id:'did: eth:0xf3beac30c498d9e26865f34fcaa57dbb935b0d74',
+  id:'did:eth:0xf3beac30c498d9e26865f34fcaa57dbb935b0d74',
   publicKey: [{
-    id: `did: eth:0xf3beac30c498d9e26865f34fcaa57dbb935b0d74#keys-1`,
-    type: 'EthereumAddress',
+    id: `did:eth:0xf3beac30c498d9e26865f34fcaa57dbb935b0d74#keys-1`,
+    type: 'Secp256k1VerificationKey2018',
     owner: 'did:eth:0xf3beac30c498d9e26865f34fcaa57dbb935b0d74',
-    address: '0xf3beac30c498d9e26865f34fcaa57dbb935b0d74'
+    ethereumAddress: '0xf3beac30c498d9e26865f34fcaa57dbb935b0d74'
   }]
 }
 ```
 
-Note this uses the `EthereumAddress` type.
+Note this uses the `Secp256k1VerificationKey2018` type and an `ethereumAddress` instead of a `publicKeyHex`.
 
 ## Resolving a DID document
 

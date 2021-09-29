@@ -12,9 +12,9 @@ describe('ethResolver', () => {
         id: did,
         publicKey: [{
           id: `${did}#keys-1`,
-          type: 'EthereumAddress',
+          type: 'Secp256k1VerificationKey2018',
           owner: did,
-          address
+          ethereumAddress: address
         }]
       }
 
